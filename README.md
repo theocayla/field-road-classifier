@@ -36,3 +36,9 @@ The data used for training is stored in the dataset directory. It has the follow
 To train a model, the train.py file must be executed. Training parameters can be modified: model backbone, batchSize and number of epochs.
 To run the inference with a trained model, the inference.py file must be used. The path to the model's weights and the test images folder must be specified manually.
 Trained weights are available in the weights directory.
+
+## Trained models
+
+Trained models can be downloaded with the following links:
+ViT : https://drive.google.com/file/d/1uY-hZ6BjZL8bG0V2WGw7K7wE3c3zEU4x/view?usp=drive_link
+Resnet50 : https://drive.google.com/file/d/1-06PrXlUpQo1q9bcxKVvBue1ZpLCGnIs/view?usp=drive_link
