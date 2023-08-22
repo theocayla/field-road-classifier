@@ -69,9 +69,9 @@ def inference(modelPath, classLabels, testFolder, backbone="ViT"):
 if __name__ == "__main__":
 
     classes = ["field", "road"]
-    modelPath = "./weights/model.pth"
+    modelPath = "./weights/modelName.pth" # replace with the right model path
     testImages = "./test_images"
-    backbone = "ResNet50" # can be "ViT" or "ResNet50"
+    backbone = "ViT" # can be "ViT" or "ResNet50"
 
     dResults = inference(modelPath, classes, testImages)
 

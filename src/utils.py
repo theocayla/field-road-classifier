@@ -3,6 +3,9 @@ from collections import Counter
 import matplotlib.pyplot as plt
 
 def displayImages(dataLoader, classes, batchSize):
+    '''
+    Method that allows to displays image contained in a dataloader
+    '''
     data_iter = iter(dataLoader)
 
     while True:
@@ -23,7 +26,9 @@ def displayImages(dataLoader, classes, batchSize):
             plt.show()
 
 def plotTrainingResults(trainLosses, testAccuracies):
-    # Plot the train loss and test accuracy curves
+    '''
+    Plot the train loss and test accuracy curves
+    '''
     plt.figure(figsize=(10, 5))
     plt.subplot(1, 2, 1)
     plt.plot(trainLosses, label="Train Loss")
@@ -44,7 +49,7 @@ def errorCounter(incorrectPredictions):
   '''
   Returns a dict containing the number of mispredictions for each image
   Input :
-    incorrectPredictions - list of list : the list of mispredicted images for each epoch
+    incorrectPredictions - list[list] : the list of mispredicted images for each epoch
   '''
   lErrors = []
   for epochErrors in incorrectPredictions:
